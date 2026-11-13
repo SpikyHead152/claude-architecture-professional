@@ -218,3 +218,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Project-specific additions (Claude architecture lab) ----
+# Node / TypeScript experiments
+node_modules/
+*.tsbuildinfo
+
+# Local databases and vector stores
+*.db
+*.sqlite
+*.sqlite3
+.chroma/
+chroma/
+*.faiss
+
+# Raw eval and trace output (commit curated results, not every run)
+evals/runs/
+traces/
+
+# Claude Code: personal, machine-local settings (team settings.json is committed)
+.claude/settings.local.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
